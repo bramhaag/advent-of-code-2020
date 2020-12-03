@@ -1,19 +1,14 @@
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.IntStream;
 import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 public class Day3B {
 
   private static final char TREE = '#';
 
   public static void main(String[] args) throws IOException {
-    var map = Files.lines(Paths.get("input.txt"), Charset.defaultCharset())
+    var map = Files.lines(Paths.get("input.txt"))
         .map(String::toCharArray)
         .toArray(char[][]::new);
 
@@ -31,7 +26,7 @@ public class Day3B {
     int trees = 0;
 
     for (int x = 0, y = 0; y < map.length; x += right, y += down) {
-      trees += map[y][x % map[y].length] == TREE ? 1 : 0;
+      if (map[y][x % map[y].length] == TREE) trees++;
     }
 
     return trees;
