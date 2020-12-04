@@ -5,3 +5,4 @@ Languages used per day:
 1. Haskell
 2. Elixir
 3. Java
+4. regex (with a hint of python)
