@@ -7,3 +7,6 @@ Languages used per day:
 3. Java
 4. regex (with a hint of python)
 5. Elixir
+6. Python but codegolf
+7. Python
+8. Python
