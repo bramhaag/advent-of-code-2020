@@ -11,3 +11,4 @@ Languages used per day:
 7. Python
 8. Python
 9. Python
+10. Haskell
